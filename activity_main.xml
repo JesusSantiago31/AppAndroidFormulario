@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/backgr"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/app_titulo2"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/tittle"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Jugador1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/tittle"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            app:startIconDrawable="@drawable/ic_numero"
+            app:boxStrokeColor="@color/tittle"
+            android:textColorHint="@color/text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textColor="@color/text"
+                android:id="@+id/txtMinutos1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_texto_minutos"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            app:startIconDrawable="@drawable/ic_numero"
+            app:boxStrokeColor="@color/tittle"
+            android:textColorHint="@color/text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textColor="@color/text"
+                android:id="@+id/txtSegundos1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_texto_segundos"
+
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Jugador2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/tittle"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:startIconDrawable="@drawable/ic_numero"
+                app:boxStrokeColor="@color/tittle"
+                android:textColorHint="@color/text"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="@color/text"
+                    android:id="@+id/txtMinutos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/app_texto_minutos"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:startIconDrawable="@drawable/ic_numero"
+                app:boxStrokeColor="@color/tittle"
+                android:textColorHint="@color/text"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="@color/text"
+                    android:id="@+id/txtSegundos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/app_texto_segundos"
+
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/app_boton_enviar"
+            android:textColor="@color/text"
+            app:strokeColor="@color/text"
+        />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
