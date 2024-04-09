@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Runers</string>
+    <string name="app_titulo2">Corredores</string>
+    <string name="app_texto_segundos">Ingresa los segundos</string>
+    <string name="app_texto_minutos">Ingresa los minutos</string>
+    <string name="app_boton_enviar">ENVIAR DATOS</string>
+</resources>
